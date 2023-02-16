@@ -2,7 +2,7 @@ import theme      from './theme'
 import { Layout } from './containers'
 import { ThemeProvider }  from '@mui/material/styles'
 import { Routes, Route, Navigate }  from 'react-router-dom'
-import { Customers, Home, Products, NotFound, Transactions }  from './pages'
+import { Customers, Home, Products, NotFound, Transactions, Geography }  from './pages'
 
 function App() {
   
@@ -14,6 +14,7 @@ function App() {
           <Route path="/dashboard"    element={<Navigate to="/" replace />} />
           <Route path="/products"     element={<Products/>} />
           <Route path="/customers"    element={<Customers/>} />
+          <Route path="/geography"    element={<Geography/>} />
           <Route path="/transactions" element={<Transactions/>} />
 
           <Route path="*" element={ <NotFound /> } />
